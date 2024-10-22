@@ -22,3 +22,24 @@
   width: 100%;
   background-color: #87ceeb;
 }
+
+.register {
+  margin-left: 30%;
+}
+
+.input-box {
+  display: block;
+  margin: 20px;
+  padding: 5px;
+  width: 300px;
+  border: 1px solid #87ceeb;  
+}
+
+.app-button {
+  margin: 20px;
+  padding: 10px;
+  width: 150px;
+  background-color: #87ceeb;
+  border: 1px solid;
+  cursor: pointer;
+ }
