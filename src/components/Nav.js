@@ -12,14 +12,25 @@ const Nav = () => {
 
     return (
         <div>
-            <ul className='nav-ul'>
-                <li><Link to='/'>Products</Link></li>
-                <li><Link to='/add'>Add Product</Link></li>
-                <li><Link to='/update'>Update Product</Link></li>
-                <li><Link to='/profile'>Profile</Link></li>
-                <li>{auth ? <Link onClick={logout} to='/signup'>Logout</Link> :
-                    <Link to='/signup'>SignUp</Link>}</li>
-            </ul>
+            <img
+                className='app-logo'
+                alt=''
+                src='https://marketplace.canva.com/EAFvDRwEHHg/1/0/1600w/canva-colorful-abstract-online-shop-free-logo-cpI8ixEpis8.jpg'
+            />
+            {auth ?
+                <ul className='nav-ul'>
+                    <li><Link to='/'>Products</Link></li>
+                    <li><Link to='/add'>Add Product</Link></li>
+                    <li><Link to='/update'>Update Product</Link></li>
+                    <li><Link to='/profile'>Profile</Link></li>
+                    <li><Link onClick={logout} to='/login'>Logout ({JSON.parse(auth).name})</Link></li>
+                </ul>
+                :
+                <ul className='nav-ul nav-right'>
+                    <li><Link to='/login'>Login</Link></li>
+                    <li><Link to='/signup'>SignUp</Link></li>
+                </ul>
+            }
         </div>
     );
 }
