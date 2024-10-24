@@ -68,3 +68,19 @@
   display: block;
   margin-left: 20px;
 }
+
+.products-list {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.products-list ul {
+  margin: 0;
+}
+
+.products-list ul li {
+  display: inline-block;
+  border: 1px solid #87ceeb;
+  padding: 5px;
+  width: 150px;
+}
