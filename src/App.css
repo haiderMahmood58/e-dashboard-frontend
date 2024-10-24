@@ -35,7 +35,8 @@
   background-color: #87ceeb;
 }
 
-.register {
+.register,
+.product {
   margin-left: 30%;
 }
 
@@ -59,4 +60,11 @@
   background-color: #87ceeb;
   border: 1px solid;
   cursor: pointer;
+}
+
+.invalid-input {
+  color: #ff0000;
+  margin-top: -20px;
+  display: block;
+  margin-left: 20px;
 }
